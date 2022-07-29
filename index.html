@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ht14</title>
+</head>
+<body>
+    <button class="btn" id="btn">Кнопка для алерта</button> 
+    <button class="btn" id="btn1">Меняет цвет</button> 
+    <script src = "script.js"></script>
+
+    <div class="container">
+        <div class="elem1"></div>
+        <div class="elem2"></div>
+        <div class="elem3"></div>
+        <div class="elem4"></div>
+        <div class="elem5"></div>
+    </div>    
+<style>
+    
+    .container {
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px;
+        grid-template-rows: 100px 100px 100px;
+        grid-template-areas: 
+            "header header header header header header header header"
+            "main main main main . main2 main2 main2"
+            "footer footer footer footer footer2 footer2 footer2 footer2";
+        }
+
+    .elem1 {
+        grid-area: header;
+        background-color: rgb(100, 79, 164);
+    }
+
+    .elem2 {
+        grid-area: main;
+        background-color: rgb(73, 133, 98);
+    }
+
+    .elem3 {
+        grid-area: main2;
+        background-color: rgb(134, 199, 81);
+    }
+
+    .elem4 {
+        grid-area: footer;
+        background-color: rgb(237, 112, 9);
+    }
+
+    .elem5 {
+        grid-area: footer2;
+        background-color: rgb(58, 17, 221);
+    }
+
+
+</style>   
+</body>
+</html>
